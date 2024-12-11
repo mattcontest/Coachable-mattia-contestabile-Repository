@@ -4,6 +4,8 @@
 # By doing so we can then add together the values, calculate the respective carry
 # and add it it before while we update our final solution.
 
+# Loom: https://www.loom.com/share/be44b18673cb412ab685ce4c9503be6a?sid=b0aff3ea-8e21-4013-83b3-af619d7fa4c8
+
 def addBinary(self, a: str, b: str) -> str:
     #First initalizing my solution string
     sol = "";
