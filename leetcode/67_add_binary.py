@@ -1,4 +1,4 @@
-#This problem gives us two binary numbers  in strings format
+#This problem gives us two binary numbers in strings format
 # and our aim is to add them together.
 # We will take advantage of ord() to calcualte the int value of our chars
 # By doing so we can then add together the values, calculate the respective carry
@@ -24,8 +24,8 @@ def addBinary(self, a: str, b: str) -> str:
         sol = char + sol;
         carry = total // 2;
         #O(n)
-        if(carry):
-            sol = str(carry) + sol;
+    if(carry):
+        sol = str(carry) + sol;
             
         #Time Complexity O(n)
         #Space Complexity O(n)
