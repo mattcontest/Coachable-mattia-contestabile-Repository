@@ -1,3 +1,7 @@
+# The goal is to calculate the minimum number of steps required to make `t` an anagram of `s`.
+# We will achieve this by counting the frequency of characters in both strings
+# and determining the difference in character counts that need to be adjusted.
+
 #Loom https://www.loom.com/share/26871858062846d8b35267e8b71c6a37?sid=428e8d4a-2828-4487-a7fb-37eb685a2813
 
 class Solution:
