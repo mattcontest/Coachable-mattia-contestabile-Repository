@@ -1,3 +1,4 @@
+#Loom explanation: https://www.loom.com/share/b5fa34deb0ad435bbee2ed6879ca43e7?sid=2b1f2195-e382-4431-af47-f37d9e1e2de8
 class Solution:
     def mergeAlternately(self, word1: str, word2: str) -> str:
         # Time Complexity: O(m + n) 
