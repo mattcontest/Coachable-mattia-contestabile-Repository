@@ -19,7 +19,8 @@ class Solution:
         # characters constitute the common prefix, so we append them to `result`.
         # Eventually, once the conditions are triggered or the loop completes, 
         # we return `result`.
-        # Time Complexity: O(n * m), where `n` is the number of strings, and `m` is the length of the first string.
+        # Time Complexity: O(n * m), where `n` is the number of strings,
+        # and `m` is the length of the first string.
         # Space Complexity: O(1), as no extra space is used.ch will constitute to common prefixes
         #Either by the above conditon getting activated or not we will return result. 
         #Loom Explanation  https://www.loom.com/share/fd45b55f6d75421f84a633995ba9cfc5
@@ -39,3 +40,4 @@ class Solution:
         #Time complexity O(n) * O(m) = O(n*m)
         #Space Complexity: O(1)
         return result
+    
