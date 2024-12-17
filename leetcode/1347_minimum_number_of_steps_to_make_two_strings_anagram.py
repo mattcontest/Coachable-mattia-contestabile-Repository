@@ -1,3 +1,4 @@
+"""1347. Minimun number of steps to make two strings anagram"""
 # The goal is to calculate the minimum number of steps required to make `t` an anagram of `s`.
 # We will achieve this by counting the frequency of characters in both strings
 # and determining the difference in character counts that need to be adjusted.
