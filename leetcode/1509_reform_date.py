@@ -23,4 +23,3 @@ class Solution:
         #Time Complexity: O(n)
         #Space Complexity: O(n)
         return splits[2] + "-" + month[splits[1]] + "-" + str(dd)
-        
