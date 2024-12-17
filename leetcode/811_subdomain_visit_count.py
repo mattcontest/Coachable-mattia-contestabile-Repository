@@ -30,7 +30,3 @@ class Solution:
         #Time Complexity O(k) * O(m) * O(m) = O(k * m^2)
         #Space Complexity O(m)
         return [f"{count} {domain}" for domain, count in counts.items()]
-
-
-
-
