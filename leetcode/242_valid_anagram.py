@@ -21,10 +21,8 @@ class Solution:
             tCount[char_t] = 1 + tCount.get(char_t,0)
         #Comparing the two hashmaps for checking whether these two strings are valid anagrams
         #Time Complexity: O(n)
-        for i in tCount:
-            if tCount[i] != sCount.get(i,-1):
+        for key,value in tCount.items():
+            if value != sCount.get(key,-1):
                 return False
         #Time complexity O(n) + O(n) = O(n)
         return True
-    
-    
