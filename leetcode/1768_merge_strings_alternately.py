@@ -7,7 +7,7 @@ class Solution:
         #https://www.loom.com/share/
         #b5fa34deb0ad435bbee2ed6879ca43e7?sid=2b1f2195-e382-4431-af47-f37d9e1e2de8
         """
-        # Time Complexity: O(m + n) 
+        # Time Complexity: O(m + n)
         # Reasoning: We iterate through both word1 and word2 once, appending
         # their characters to the result list.
         # m = length of word1, n = length of word2
@@ -39,5 +39,3 @@ class Solution:
         #To convert our array into a string.
         result = "".join(result)
         return result
-    
-
