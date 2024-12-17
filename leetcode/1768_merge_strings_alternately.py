@@ -39,4 +39,3 @@ class Solution:
         #To convert our array into a string.
         result = "".join(result)
         return result
-    
