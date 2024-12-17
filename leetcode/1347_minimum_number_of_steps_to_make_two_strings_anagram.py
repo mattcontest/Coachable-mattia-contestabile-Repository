@@ -30,8 +30,8 @@ class Solution:
         #We will calculate the difference (if there is) of sCount[char] - tCount[char]
         # and contiounsly update our result accordingly.
         #Time Complexity: O(n)
-        for key in sCount:
-            result += max(0,sCount[key] - tCount.get(key,0))
+        for key,value in sCount:
+            result += max(0,value - tCount.get(key,0))
         #Time Complexity O(n) + O(n) + O(n) = O(n)
         #Space Complexity O(n)
         return result
