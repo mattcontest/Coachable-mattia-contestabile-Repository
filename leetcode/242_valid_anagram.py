@@ -16,9 +16,9 @@ class Solution:
         tCount = {}
         #We now check the frequency of each single character within both s & t
         #Time complexity: O(n)
-        for i in range(len(t)):
-            sCount[s[i]] = 1 + sCount.get(s[i], 0)
-            tCount[t[i]] = 1 + tCount.get(t[i],0)
+        for i,(char_s,char_t) in enumerate(zip(s,t)):
+            sCount[char_s] = 1 + sCount.get(char_s, 0)
+            tCount[char_t] = 1 + tCount.get(char_t,0)
         #Comparing the two hashmaps for checking whether these two strings are valid anagrams
         #Time Complexity: O(n)
         for i in tCount:
@@ -27,4 +27,4 @@ class Solution:
         #Time complexity O(n) + O(n) = O(n)
         return True
     
-
+    
