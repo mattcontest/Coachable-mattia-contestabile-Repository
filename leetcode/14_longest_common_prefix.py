@@ -20,12 +20,11 @@
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         #Initializing an empty string for storing our result
-        result = "";
+        result = ""
         #We will be using an interative for loop to compare 
         #the first string to the other strings's characters.
         #Reason for so is to see whether we can find any consequtives/indivudal matches
         #O(n)
-
         for i in range(len(strs[0])):
             #O(m)
             for string in strs:

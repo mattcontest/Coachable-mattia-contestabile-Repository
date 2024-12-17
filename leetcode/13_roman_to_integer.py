@@ -10,18 +10,16 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         #First we initialize our dictionary by mapping each roman numerals to integers
-        hashmap = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D': 500, 'M':1000};
+        hashmap = {'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D': 500, 'M':1000}
         #Declaring our total
-        total = 0;
-        n = len(s);
-        i = 0;
-
+        total = 0
+        n = len(s)
+        i = 0
         #Iterating with a while loop over the 's' and checked by using our hashmaps
         #the respective roman numerals integer values and proceeded with either adding  
         # or subtracting accordingly.
         #We also moved by index +2 in case we performed a subtraction
         #We instead moved our index by 1 in case we just performed an addition
-
         #O(n)
         while(i<n):
             if i + 1 < n and hashmap[s[i]] < hashmap[s[i+1]]:

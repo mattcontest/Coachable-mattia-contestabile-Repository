@@ -7,9 +7,9 @@
 class Solution:
     def minSteps(self, s: str, t: str) -> int:
         #We will start by counting the occurences of chars for both s and t
-        sCount = {};
-        tCount = {};
-        result = 0;
+        sCount = {}
+        tCount = {}
+        result = 0
         #Time Complexity: O(n)
         #We start counting for s
         for char in s:
@@ -17,7 +17,6 @@ class Solution:
                 sCount[char] +=1
             else:
                 sCount[char] = 1
-        
         #Time Complexity: O(n)
         #We also do the counting for t
         for char in t:
@@ -25,15 +24,11 @@ class Solution:
                 tCount[char] +=1
             else:
                 tCount[char] = 1
-        
-
         #We will calculate the difference (if there is) of sCount[char] - tCount[char] 
         # and contiounsly update our result accordingly.
-
         #Time Complexity: O(n)
         for key in sCount:
             result += max(0,sCount[key] - tCount.get(key,0))
-        
         #Time Complexity O(n) + O(n) + O(n) = O(n)
         #Space Complexity O(n)
         return result
