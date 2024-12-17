@@ -1,6 +1,10 @@
-#Loom Explanation: https://www.loom.com/share/d57df9ca5f174c35be7be5b00e3c4f29
+"""1509. Reform Date"""
 class Solution:
+    """Solution Class"""
     def reformatDate(self, date: str) -> str:
+        """
+        #Loom Explanation: https://www.loom.com/share/d57df9ca5f174c35be7be5b00e3c4f29
+        """
         #First we need to split our given date
         splits = date.split(" ")
         #We then proceed by grabbign our first value (Day)
@@ -14,9 +18,9 @@ class Solution:
         #We will be checking if the day is a one digit or 2 digits.
         #If 2 digits then we will leave as it is, meanwhile if it's 1 digit
         #We will be adding an additional starting '0'
-        if( (int(dd)//10) == 0):
+        if(int(dd)//10) == 0:
             dd = str('0') + str(dd)
         #Time Complexity: O(n)
         #Space Complexity: O(n)
-        return (splits[2] + "-" + month[splits[1]] + "-" + str(dd))
+        return splits[2] + "-" + month[splits[1]] + "-" + str(dd)
         
