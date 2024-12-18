@@ -1,6 +1,6 @@
 #Loom: https://www.loom.com/share/49b3a7e8faf14012b274297443082570?sid=febff73b-da83-4333-b3e6-32789ee123a3
 class Solution:
-    def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
+    def insert(self, intervals: list[List[int]], newInterval: List[int]) -> List[List[int]]:
         #We will start by declaring an empty array that we will use to store the result
         result = []
         #Time Complexity: O(n)
